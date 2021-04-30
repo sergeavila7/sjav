@@ -1,0 +1,18 @@
+.about{
+    background-color: $color-black;
+    small{
+        color: $color-terciario;
+        // font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    h3{
+        color: $color-terciario;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: 'Times New Roman';
+        letter-spacing: 2px;
+        
+    }
+}
