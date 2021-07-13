@@ -1,0 +1,32 @@
+.slider{
+max-width: 500px;
+.container_img{
+    width: 400px;
+}
+    .carousel-control-prev-icon{
+        display: none;
+    }
+    
+    .carousel-control-next-icon{
+        display: none;
+    }
+    
+    .carousel-indicators{
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
+        height:20px;
+        right:-100px; left:auto;
+        width:auto;
+        transform: rotate(90deg);
+    }
+    .carousel-indicators li{
+        display:block; margin-bottom:5px;
+        
+    }
+    .carousel-indicators li.active{
+        margin-bottom:5px;
+        
+    }
+    }

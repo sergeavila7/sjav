@@ -1,0 +1,106 @@
+.contact{
+    max-width: 800px;  
+    margin: 50px auto;
+position: relative;
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);      
+padding: 30px;   
+background: $color-black;
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    line-height: 48px;
+    padding-bottom: 20px;
+    color: $color-white;
+
+}
+
+
+}
+.contact-form .input-text:focus + .label, .label-msg,
+.contact-form .input-text.not-empty + .label, .label-msg{
+    transform: translateY(-6px);
+}
+.form-field{
+    position: relative;
+    margin: 32px;
+    .input-text{
+        display: display;
+        width:100%;
+        height: 36px;
+        border-width: 0 0 2px 0;
+        font-size: 1rem;
+        line-height: 26px;
+        font-weight: 400;
+        background: $color-black;
+        color: $color-white;
+    &:focus{
+        outline: none;
+    }
+    }
+}
+    .contact-form .label{
+        position: absolute;
+        left: 20px;
+        bottom: 22px;
+        line-height: 26px;
+        font-weight: 400;
+        color: $color-white;
+        cursor:text;
+        transition: transform 0.2 ease-in-out;
+    
+    }
+
+.submit-btn{
+    display: inline-block;
+    background-image: linear-gradient(125deg, $color-terciario, #f26966);
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+
+.textarea{
+display: display;
+        width:100%;
+        height: 80px;
+        border-width: 0 0 2px 0;
+        border-color: #f26966;
+        font-size: 1rem;
+        line-height: 26px;
+        font-weight: 400;
+        background: $color-black;
+        color: $color-white;
+
+
+    &:focus{
+        outline: none;
+    }    
+}
+    .label-msg{
+        position: absolute;
+        left: 20px;
+        bottom: 70px;
+        line-height: 26px;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: $color-white;
+        cursor:text;
+        transition: transform 0.2 ease-in-out;
+    }
+
+input:valid,
+textarea:valid {
+    border-color: $color-white;
+
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: $color-terciario;
+}

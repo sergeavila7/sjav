@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Roboto&display=swap');
+
+@import "./Globals";
+@import "components/Banner";
+@import "components/Header";
+@import "pages/home";
+@import "components/ProjectsBanner";
+@import "components/Carousel";
+@import "components/Main";
+@import "components/Cards";
+@import "pages/about";
+@import "components/Form";
+@import "components/Footer";
+@import "./Medias";
+@import "pages/404";

@@ -1,0 +1,49 @@
+.home{
+        background-color: $color-black;
+
+}
+
+.presentation{
+    letter-spacing: 4px;
+   &__title{
+       font-size: 18px;
+       color: $color-terciario;
+       text-transform: uppercase;
+   }
+   &__description{
+        font-size: 16px;
+
+   }
+    &__work{
+        ul{
+            li{
+            list-style:none;
+            a{
+                color: $color-white;
+                text-decoration: none;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 72px;
+                letter-spacing: 6px;
+
+
+            &:after {
+                content: "";
+                position: absolute;
+                // background:$color-terciario;
+                background-color: rgba(192,29,29, .2);
+                height: 70px;
+                width: 0;
+                left: 0px;
+                transition: 0.3s;
+                z-index: 1;
+            }
+
+                    &:hover:after {
+                        width: 100%;
+                    }
+            }
+            }
+        }
+    }
+}

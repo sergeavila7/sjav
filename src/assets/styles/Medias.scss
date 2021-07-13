@@ -1,0 +1,205 @@
+@media only screen and (max-width: 768px) {
+  .header .navbar{
+    justify-content: center;
+       .menu {
+      margin-right: 0px;
+      padding: 0;  
+    }
+  }
+    .container__menu{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111111f5;
+      border-top: 1px solid $color-terciario;
+      bottom: 0;
+      height: 50px;
+      left: 0;
+      margin: 0 auto;
+      // max-width: 500px;
+      position: fixed;
+      right: 0;
+      width: 100%;
+      z-index: 1000;      
+  }
+  .overlay{
+    h2{
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+    p{
+      font-size: 3rem;
+    }
+  }
+  .projects{
+   
+    h2{
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    p{
+        font-size: 1rem;
+        letter-spacing: 1px;
+
+      }
+    }
+  .slider .carousel-indicators {
+    position:absolute;
+    top:auto;
+    bottom:-30px;
+    margin:auto;
+    height:20px;
+    right:0; 
+    left:0;
+    width:auto;
+    transform: rotate(0deg);
+
+  }
+
+  // About
+ 
+  .about p{
+    font-size: .9rem;
+  }
+  .main__content{
+    ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+        // display: flex;
+        li{
+            list-style:none;
+            margin: 15px 10px;
+            svg{
+                font-size: 40px;
+            }
+        }
+        }
+    }
+    .img__container{
+      width: 250px;
+      height: 250px;    
+  }
+
+  //Footer 
+  .footer{
+    border-top: none;
+      & section:before{
+        content: '';
+}
+  }
+
+.container__socials {
+  margin-bottom: 5rem;
+       ul li{
+            margin: 0 30px;
+
+            a{
+              width: 70px;
+              height:70px;
+                transition: none;
+                       
+                & svg{
+                  font-size: 40px;
+                }
+            }
+        
+    }
+
+}
+
+.container__socials {
+
+    ul li a:hover{
+        transition-delay:none;
+      
+    }
+ul li a:before{
+    content: none;
+   
+
+}
+
+}
+
+}
+
+@media only screen and (max-width: 576px) {  
+  .overlay{
+    h2{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1rem;
+    }
+  }
+
+  .about__container{
+    flex-direction: column;
+  }
+  .about p{
+    font-size: .8rem;
+  }
+  .main__content{
+    ul{
+  
+        // display: flex;
+        li{
+            margin: 15px 10px;
+            svg{
+                font-size: 30px;
+            }
+        }
+        }
+    }
+    .img__container{
+      width: 200px;
+      height: 200px;    
+  }
+
+  .presentation{
+    &__title{
+        font-size: 16px;
+    }
+    &__description {
+        font-size: 14px;
+    }
+    &__work ul li a{
+  font-size: 30px;
+}
+  }
+
+
+// Estilos del Banner Project
+.projects{
+   
+  h2{
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+  p{
+      font-size: 1rem;
+      letter-spacing: 1px;
+
+    }
+  }
+
+
+  // Footer
+  .container__socials {
+    ul li{
+         margin: 0 10px;
+         a{
+           width: 40px;
+           height:40px;
+             transition: none;
+             & svg{
+               font-size: 30px;
+             }
+         }
+     
+ }
+
+}
+}

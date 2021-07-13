@@ -1,37 +1,42 @@
-import React from 'react'
-import {Card, Button, ListGroup} from 'react-bootstrap'
-export const Cards = (props) => {
-    return (
-      <div className="card__container py-4 mx-auto">
-<Card border="light" >
-  <Card.Img variant="top" src={props.img}/>
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <ListGroup >
-    <ListGroup.Item style={
-        {
-            background:'#111111',
-        }
-    }>Cras justo odio</ListGroup.Item>
-    <ListGroup.Item style={
-        {
-            background:'#111111'
-        }
-    }>Dapibus ac facilisis in</ListGroup.Item>
-    <ListGroup.Item style={
-        {
-            background:'#111111'
-        }
-    }>Vestibulum at eros</ListGroup.Item>
-  </ListGroup>
-    <Button variant="outline-light mt-4">Go somewhere</Button>
-  </Card.Body>
-</Card> 
-</div>
+import React from 'react';
+import { Button } from 'react-bootstrap';
+import { FaGithub } from 'react-icons/fa';
 
-)
-}
+export const Cards = (props) => {
+  return (
+    <div className='card d-flex mx-auto '>
+      <div className='card__header'>
+        <div className='card__title'>
+          <h2>{props.title}</h2>
+        </div>
+        <div className='card__icons'>
+          <ul>{props.icons}</ul>
+        </div>
+      </div>
+      <div className='card__img' alt={props.title}>
+        <img src={props.img} loading='lazy' alt={props.title} />
+      </div>
+      <div className='card__body'>
+        <p className='card__description mt-4'>{props.description}</p>
+        <div className='card__buttons'>
+          <Button
+            className='btn btn-danger col-9 mx-1'
+            href={props.demo}
+            target='_blank'
+          >
+            Ver Proyecto
+          </Button>
+          <Button
+            className='btn btn-light col-2 mx-1'
+            href={props.github}
+            target='_blank'
+          >
+            <i className='card__icons--github'>
+              <FaGithub />
+            </i>
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+};

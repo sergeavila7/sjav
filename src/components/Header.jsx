@@ -1,7 +1,5 @@
 import React from 'react';
-import { Logo } from '../images/icon.png';
 import { Link } from 'gatsby';
-import '../styles/styles.scss';
 
 const Header = () => {
   return (
@@ -9,21 +7,17 @@ const Header = () => {
       <nav className='navbar'>
         <div className='logo__container'>
           <Link to='/'>
-            <h2 className="logo" data-text="SA">SA</h2>
+            <h2 className='logo text-center' data-text='SA'>
+              SA
+            </h2>
           </Link>
         </div>
-        <input type='checkbox' id='nav' className='hidden' />
-        <label for='nav' className='nav-toggle'>
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <div className='wrapper'>
+        <div className='container__menu'>
           <ul className='menu'>
             <Link to='/'>Inicio</Link>
-            <Link to='/projects'>Projectos</Link>
-            <Link to='/about'>Sobre mí</Link>
-            <Link to='/contact'>Contacto</Link>
+            <Link to='/Projects'>Projectos</Link>
+            <Link to='/About'>Sobre mí</Link>
+            <Link to='/Contact'>Contacto</Link>
           </ul>
         </div>
       </nav>
