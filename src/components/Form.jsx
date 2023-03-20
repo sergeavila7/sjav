@@ -1,16 +1,17 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
+
 export default function ContactUs() {
   function sendEmail(e) {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        'service_kuhfpkf',
-        'template_glcdt3z',
+        'service_iqox5q5',
+        'template_e93i07i',
         e.target,
-        'user_xZG2GDssDD05TPUzSnMNO'
+        'user_wS2EM6YFGEi4s1zghyD61'
       )
       .then(
         (result) => {
@@ -38,42 +39,45 @@ export default function ContactUs() {
           <div className='col-12 row justify-content-center align-items-center'>
             <div className='form-field col-lg-4'>
               <input
+                id='name'
                 className='input-text'
                 type='text'
-                name='Name'
+                name='name'
                 required
                 pattern='[a-zA-ZÀ-ÿ\s]{1,25}'
                 title='Username should only contain lowercase letters. e.g. Juan'
               />
-              <label for='name' class='label'>
+              <label htmlFor='name' class='label'>
                 Nombre(s)
               </label>
             </div>
 
             <div className='form-field col-lg-4'>
               <input
+                id='lastnames'
                 className='input-text'
                 type='text'
-                name='Lastname'
+                name='lastname'
                 required
                 pattern='[a-zA-ZÀ-ÿ\s]{1,40}'
                 title='Username should only contain lowercase letters. e.g. Juan'
               />
-              <label for='lastnames' class='label'>
+              <label htmlFor='lastnames' class='label'>
                 Apellidos
               </label>
             </div>
 
             <div className='form-field col-lg-4'>
               <input
+                id='email'
                 className='input-text'
                 type='email'
-                name='Email'
+                name='email'
                 required
                 pattern='^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$'
                 title='Ingrese una cuenta de correo valida. example@example.com'
               />
-              <label for='email' class='label'>
+              <label htmlFor='email' class='label'>
                 Correo electronico
               </label>
             </div>
@@ -93,8 +97,13 @@ export default function ContactUs() {
             </div> */}
 
             <div className='form-field col-lg-4'>
-              <textarea className='textarea' name='msg' required />
-              <label for='msg' class='label-msg'>
+              <textarea
+                id='message'
+                className='textarea'
+                name='message'
+                required
+              />
+              <label htmlFor='message' class='label-msg'>
                 Mensaje
               </label>
             </div>

@@ -6,16 +6,17 @@ import {
   FaSass,
   FaBootstrap,
   FaReact,
-  
   FaGitAlt,
   FaNode,
+  FaAngular,
 } from 'react-icons/fa';
 import {
   SiJavascript,
   SiTailwindcss,
   SiWebpack,
-  SiBabel,
   SiGatsby,
+  SiApollographql,
+  SiGraphql,
 } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
 
@@ -46,13 +47,7 @@ export const Main = () => {
               }}
             />
           </li>
-          {/* <li>
-              <DiResponsive
-                style={{
-                  color: '#fff',
-                }}
-              />
-            </li> */}
+
           <li>
             <FaBootstrap
               style={{
@@ -96,13 +91,7 @@ export const Main = () => {
               }}
             />
           </li>
-          <li>
-            <SiBabel
-              style={{
-                color: '#F1D53C',
-              }}
-            />
-          </li>
+
           <li>
             <FaReact
               style={{
@@ -111,9 +100,23 @@ export const Main = () => {
             />
           </li>
           <li>
+            <FaAngular
+              style={{
+                color: '#D2002F',
+              }}
+            />
+          </li>
+          <li>
             <SiGatsby
               style={{
                 color: '#70498B',
+              }}
+            />
+          </li>
+          <li>
+            <SiGraphql
+              style={{
+                color: '#D932A2',
               }}
             />
           </li>
@@ -128,6 +131,13 @@ export const Main = () => {
             <DiMongodb
               style={{
                 color: '#6EAE5D',
+              }}
+            />
+          </li>
+          <li>
+            <SiApollographql
+              style={{
+                color: '#102945',
               }}
             />
           </li>

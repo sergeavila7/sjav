@@ -9,9 +9,7 @@ export const Cards = (props) => {
         <div className='card__title'>
           <h2>{props.title}</h2>
         </div>
-        <div className='card__icons'>
-          <ul>{props.icons}</ul>
-        </div>
+        <div className='card__icons'>{props.icons}</div>
       </div>
       <div className='card__img' alt={props.title}>
         <img src={props.img} loading='lazy' alt={props.title} />

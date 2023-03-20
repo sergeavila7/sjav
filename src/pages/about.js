@@ -1,14 +1,13 @@
 import React from 'react';
-import SEO from '../components/Seo';
-// import { Gallery } from '../components/Gallery';
+import Seo from '../components/Seo';
 import { Main } from '../components/Main';
-import Me from '../assets/images/Me.jpg';
+import Me from '../assets/images/Me.jpeg';
 
 import '../assets/styles/styles.scss';
 
 const About = () => (
   <>
-    <SEO title='About' />
+    <Seo title='About' />
     <section className='about p-5'>
       <div className='row'>
         <div className='mx-auto'>
@@ -27,16 +26,13 @@ const About = () => (
             Tecnología y el Desarrollo Web
           </p>
           <p>
-            Soy un Desarrollador Web con un gran interes en la técnologia.
-            Actualmente mi trabajo se basa en el uso del Stack MERN.
-          </p>
-          <p>
-            Tengo conocimientos en Base de Datos relacionales y no relacionales,
-            Diseño y Maquetación de Sitios Web apoyandome en herramientas como
-            React, Sass y Bootstrap para el Frontend. En el Backend trabajo con
-            Node, MongoDB, Mongoose y Express. Tengo conocimiento en otras
-            herramientas como JWT, Webpack, Babel, Flexbox, Grid, Animaciones,
-            MySql, React Router y Tailwind.
+            Estudie en la Universidad Autonoma del Estado de Mexico, donde nacio
+            mi interes por ser programador. Posteriormente me apoye de
+            plataformas como Udemy y Platzi para continuar mi camino como
+            Desarrollador Frontend, donde cuento con mas de 2 años de
+            experiencia. He adquirido conocimientos en React, Angular, Jest,
+            NextJS, GatsbyJS, CSS, SCSS, Bootstrap y Tailwind entre otras
+            tecnologías.
           </p>
           <h3>Educación</h3>
           <li>UAEM</li>

@@ -5,6 +5,9 @@
       margin-right: 0px;
       padding: 0;  
     }
+    .logo__container {
+      margin-left: 0px;
+    }
   }
     .container__menu{
       display: flex;
@@ -22,7 +25,13 @@
       width: 100%;
       z-index: 1000;      
   }
+  .banner{
+    height: 80vh;
+
+  }
   .overlay{
+    height: 80vh;
+
     h2{
       font-size: 3rem;
       line-height: 3rem;
@@ -32,7 +41,8 @@
     }
   }
   .projects{
-   
+    height: 55vh;
+    align-items: flex-start;
     h2{
       font-size: 2.5rem;
       letter-spacing: 2px;
@@ -173,7 +183,7 @@ ul li a:before{
 
 // Estilos del Banner Project
 .projects{
-   
+   height: 70vh;
   h2{
     font-size: 2rem;
     letter-spacing: 2px;

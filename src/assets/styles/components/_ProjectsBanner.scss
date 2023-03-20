@@ -2,9 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 40px;
     background: $color-black;
     color: $color-white;
-    height: 100vh;
+    height: 88vh;
     h2{
       font-size: 3.5rem;
       letter-spacing: 2px;
@@ -16,4 +17,11 @@
 
       }
     }
- 
+    .banner__img{
+      height: 300px;
+    }
+    @media only screen and (max-width: 576px) {   
+      .banner__img{
+        height: 150px;
+      }
+    }
